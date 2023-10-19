@@ -1,4 +1,4 @@
-!/bin/bash
+#!/bin/bash
 screen -S interface -dm bash -c "sudo socat -d -d -ly PTY,link=/dev/ttyq3 PTY,link=/dev/ptyq3"
 sleep 2
 sudo chmod 777 /dev/ttyq3
